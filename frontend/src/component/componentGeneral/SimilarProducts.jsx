@@ -31,7 +31,7 @@ const SimilarProducts = ({ categoryId, productId }) => {
     }
   }, [categoryId, productId]);
 
-  if (loading) return <p>Loading similar products...</p>;
+  if (loading) return null;
   if (error) return <p>Error: {error}</p>;
 
   if (similarProducts.length === 0) return null; // hide section if no similar products
